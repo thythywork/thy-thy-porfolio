@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  @apply bg-gray-800 text-white; /* Adjust colors to match your design */
+  -webkit-box-shadow: 0 0 0 1000px #1a1a1a inset !important; /* Adjust the background color */
+  -webkit-text-fill-color: #D0D4FE !important; /* Adjust the text color */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #211F1F;
+  color: #815ae6
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@keyframes moveRightToLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeftToRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveBottomToTop {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.move-left-to-right {
+  animation: moveLeftToRight 1.5s ease-in-out forwards;
+}
+
+.move-right-to-left {
+  animation: moveRightToLeft 1.5s ease-in-out forwards;
+}
+
+.move-bottom-to-top {
+  animation: moveBottomToTop 1.5s ease-in-out forwards;
+}
