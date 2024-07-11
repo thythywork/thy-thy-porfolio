@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import avatar from '../../assets/avatar.png';
-import BubbleText from '../../components/bubbleText/BubbleText'
+import BubbleText from '../bubbleText/BubbleText'
 
 const Home = () => {
   return (
